@@ -4,7 +4,7 @@ Feature: Price Page
   Scenario: Check if price can be changed based on audience
     Given The user navigate to the ghost page
     When The user click on "Resources" menu
-    And The user click on Start here section
+    And The user click on "Start here" section
     When The user search for "create new blog"
     And The user open the tenth result
     And The user scroll up to the Price button page

@@ -2,6 +2,7 @@ package common;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -13,7 +14,7 @@ public class Resources extends BaseClass {
     public static final By firstPagePartialTitle = new By.ByXPath("//span[@class='text-pink-900 font-extrabold']");
     public static final By signInButton = new By.ByXPath("//a[normalize-space()='Sign in']");
     public static final String RESOURCES_BUTTON = "Resources";
-    public static final String START_HERE_BUTTON = "Start Here";
+    public static final String START_HERE_BUTTON = "Start here";
     private static final By startHereTitle = new By.ByXPath("//h1[@class='superhero']");
     public static final By searchInput = new By.ById("search-input");
     private static final By articleTitle = new By.ByXPath("//h1[@class='gh-title']");
@@ -69,6 +70,7 @@ public class Resources extends BaseClass {
         switch (button) {
             case RESOURCES_BUTTON -> clickOnResourcesButton();
             case START_HERE_BUTTON -> clickOnStartHereButton();
+            default -> System.out.println("Button is not displayed!");
         }
     }
     public static void userOpenTenthResult(){

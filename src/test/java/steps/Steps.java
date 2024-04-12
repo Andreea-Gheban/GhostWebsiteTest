@@ -42,9 +42,9 @@ public class Steps {
         clickOnButton(page);
     }
 
-    @And("The user click on Start here section")
-    public void theUserClickOnSection() {
-        clickOnStartHereButton();
+    @And("The user click on {string} section")
+    public void theUserClickOnSection(String page) {
+        clickOnButton(page);
     }
 
     @When("The user search for {string}")
