@@ -126,19 +126,14 @@ Feature: Resources Page
    When first added, the tests will be highlighted because there are no corresponding implementations for them yet;
 
 
-2. Add the new elements in the ```/pages``` folder, in the corresponding page TBI folder;
-    - here use the ```@FindBy``` annotation to add any ```ID``` or ```XPATH``` element
-      using the  ```public WebElement name_of_element;```;
-    - if you need to add multiple elements in a list, or a single one
-      (useful for when wanting to see if an element is displayed in the page
-      or not with asserting that the list is empty or not) add them in
-      ```public List <WebElement> name_of_element;```
-
+2. Add the new elements in the ```/common``` folder, in the corresponding page;
+    - here use the  ```public static final By name_of_element;``` with By``` annotation to add any ```ID``` or ```XPATH``` element
+     
 3. After elements are added, we can start implementing the ```Cucumber``` steps.
-   From the ```.feature``` file, copy the step that needs to be implemented and go to the ```stepdefinitions``` directory in the folder
+   From the ```.feature``` file, copy the step that needs to be implemented and go to the ```steps``` directory in the folder
    that contains the required page of functionality to test;
 
-   In the stepDefinition class, add a new method in this format:
+   In the Steps class, add a new method in this format:
     ```java
    @Then("insert here the name of the Cucumber test to implement")
    public void nameOfTheCucumberStep(){
