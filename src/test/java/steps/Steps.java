@@ -76,5 +76,6 @@ public class Steps {
     @Then("The user can check that price has been updated")
     public void theUserCanCheckThatPriceHasBeenUpdated() {
         Assert.assertNotEquals(1000, checkMembersNumberWasUpdated());
+
     }
 }

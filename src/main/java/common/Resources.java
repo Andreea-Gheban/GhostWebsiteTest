@@ -80,4 +80,5 @@ public class Resources extends BaseClass {
        return driver.findElement(articleTitle).getText();
 
     }
+
 }

@@ -14,7 +14,6 @@ public class Hooks {
 
     @After
     public static void quitApp() {
-
         driver.quit();
     }
 }

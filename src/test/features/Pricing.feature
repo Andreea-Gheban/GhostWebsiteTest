@@ -12,3 +12,4 @@ Feature: Price Page
     Then The user can see that the Price page opens
     When The user change the audience slider to 20k members
     Then The user can check that price has been updated
+
