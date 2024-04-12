@@ -53,5 +53,4 @@ public class Price {
         return driver.findElement(members).getText();
 
     }
-
 }

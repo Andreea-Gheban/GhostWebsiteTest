@@ -10,4 +10,3 @@ Feature: Resources Page
     Then The user open the tenth result
     Then The user can check that content is loaded
 
-

@@ -76,6 +76,5 @@ public class GhostWebsiteTest {
 
         // Close the browser
         driver.quit();
-
     }
 }
