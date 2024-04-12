@@ -81,5 +81,4 @@ public class Steps {
     public void theUserCanCheckThatPriceHasBeenUpdated() {
         Assert.assertNotEquals(1000, checkMembersNumberWasUpdated());
     }
-
 }

@@ -39,7 +39,6 @@ public class Price {
     public static void checkPriceIsUpdated() {
         driver.findElement(initialPrice).getText();
 
-
     }
 
     public static void scrollUpToPriceButtonPage() {

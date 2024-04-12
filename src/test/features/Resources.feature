@@ -8,3 +8,4 @@ Feature: Resources Page
     When The user search for "create new blog"
     Then The user open the tenth result
     Then The user can check that content is loaded
+
