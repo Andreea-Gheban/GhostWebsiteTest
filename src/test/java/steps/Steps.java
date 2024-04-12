@@ -22,7 +22,7 @@ public class Steps {
         Assert.assertTrue(signInButtonIsVisible());
     }
 
-    @When("The user open the tenth result")
+    @And("The user open the tenth result")
     public void theUserOpenTheTenthResult() {
         userOpenTenthResult();
     }
