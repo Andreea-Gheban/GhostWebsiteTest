@@ -6,7 +6,7 @@ Feature: Price Page
     When The user click on "Resources" menu
     And The user click on Start here section
     When The user search for "create new blog"
-    When The user open the tenth result
+    And The user open the tenth result
     And The user scroll up to the Price button page
     When I the user click on Price button
     Then The user can see that the Price page opens
