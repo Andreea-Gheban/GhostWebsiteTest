@@ -66,6 +66,8 @@ public class Steps {
     @When("The user change the audience slider to 20k members")
     public void theUserChangeTheAudienceSliderToKMembers() {
         updateAudienceTo20K();
+//        wait is added here to check if audience slider moved to 20k members
+        waitFor( 10);
     }
 
     @And("The user scroll up to the Price button page")
@@ -75,7 +77,7 @@ public class Steps {
 
     @Then("The user can check that price has been updated")
     public void theUserCanCheckThatPriceHasBeenUpdated() {
-        Assert.assertNotEquals(1000, checkMembersNumberWasUpdated());
-
+        Assert.assertEquals("20,000", checkMembersNumberWasUpdated());
+        Assert.assertEquals("149", checkPriceWasUpdated());
     }
 }
