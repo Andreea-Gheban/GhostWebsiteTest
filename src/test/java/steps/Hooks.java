@@ -3,7 +3,7 @@ package steps;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-import static methods.BaseClass.*;
+import static common.BaseClass.*;
 
 public class Hooks {
 

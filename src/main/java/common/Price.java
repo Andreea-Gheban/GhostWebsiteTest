@@ -1,4 +1,4 @@
-package locators;
+package common;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import static methods.BaseClass.driver;
+import static common.BaseClass.driver;
 
 public class Price {
     public static final By priceTitle = new By.ByXPath("//h1[@class='text-4xl sm:text-7xl font-extrabold tracking-tight leading-none text-white']");

@@ -1,4 +1,4 @@
-package methods;
+package common;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

@@ -1,4 +1,4 @@
-package methods;
+package steps;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;

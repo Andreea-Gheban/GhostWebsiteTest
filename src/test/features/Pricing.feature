@@ -1,3 +1,4 @@
+@regression @price
 Feature: Price Page
 
   Scenario: Check if price can be changed based on audience

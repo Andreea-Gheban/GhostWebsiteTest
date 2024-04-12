@@ -1,3 +1,4 @@
+@regression @resources
 Feature: Resources Page
 
   Scenario: Check if complete guide for new blog opens

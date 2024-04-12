@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty","html:target/html_report/latest_run.html", "rerun:target/failed_scenarios.txt"},
         features = "C:\\Users\\Admin\\IdeaProjects\\ghost\\src\\test\\features",
         glue = {"steps"},
-        tags = " ")
+        tags = "@regression")
 
 public class TestRunner{
 }
